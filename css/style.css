@@ -194,7 +194,7 @@ ul.submenu >li >a:hover {
 			.nav {
 				background-color: #dfddda;
 			}
-			.nav li {
+			.root li {
 				display: block;
 			}
 			.menu-item {
