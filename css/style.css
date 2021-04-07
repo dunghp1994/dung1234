@@ -38,7 +38,7 @@ html {
 			
 		}
 	#menu {
-    width: 960px;
+    max-width: 960px;
     height: 40px;
 			margin: 50px auto;
 			background:#f4eaed;
