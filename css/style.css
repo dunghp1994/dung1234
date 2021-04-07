@@ -191,10 +191,8 @@ ul.submenu >li >a:hover {
 			.logo img {
 				width: 200px;
 			}
-			.nav {
-				background-color: #dfddda;
-			}
-			.nav li {
+			
+			 #menu li {
 				display: block;
 			}
 			.menu-item {
