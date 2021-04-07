@@ -1,0 +1,96 @@
+body {
+    font-family: tahoma;
+    font-size: 20px;
+    width: 1000px;
+    margin: 0px auto;
+}
+#menu-top {
+    background: #141414;
+    height: 20px;
+    
+}
+#banner {
+    height: auto;
+    width: 1000px;
+}
+#main #left {
+    width: 700px;
+    float: left;
+    min-height: 400px;
+}
+#main #right {
+    width: 300px;
+    background: blue;
+    float: left;
+    min-height: 400px;
+}
+#footer {
+    background: #000;
+    color: white;
+    width: 1000px;
+    height: 30px;
+    text-align: center;
+    clear: left;
+    line-height: 30px;
+}
+ #menu-top ul {
+     margin: 0px;
+     padding: 0px;
+ }
+
+#menu-top ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+#menu-top ul li a {
+    text-decoration: none;
+    float:left;
+    display: block;
+    height:20px;
+    line-height: 20px;
+    color:white;
+    padding: 0px 20px;
+    border-right: 1px solid gray;
+}
+#menu-top ul li a.active {
+    background: blue;
+}
+#main #left ul {
+    margin: 0px;
+    padding: 0px;
+}
+#main #left ul li {
+    list-style: none;
+    clear: left;
+    border-bottom: 3px solid #ccc;
+    float:left;   /* neu k ma float left the li thi hinh anh va se bi tran ra */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#main #left ul li img {
+    float: left;
+    margin-right: 10px;
+    
+}
+#main #left ul li h3 {
+    font-size: 15px;
+    margin-top:0px;
+}
+#main {
+    margin-bottom: 20px;
+}
+#main #right .menu_right ul {
+    margin: 0px;
+    padding: 0px;
+}
+#main #right .menu_right ul li {
+    list-style: none;
+}
+#main #right .menu_right h3 {
+    background: green url(images/anh01.png) no-repeat;
+    height: 40px;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 40px;
+
+}

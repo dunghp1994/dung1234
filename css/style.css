@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+/* すべてのWEBページに適用される。*/
+html {
+	font-family: sans-serif
+	}
+	 * {
+		box-sizing: border-box;
+	}
+	body {
+		margin: 0 0 0 0;
+		background-image: url("../images/anhnen.gif")
+	}
+	/* wrapper: la selector chua toan bo noi dung trang web */
+	.wrapper {
+		margin: 0 auto 0 auto; /* 左右のマージンをautoに: dua trang web ra giua trinh duyet*/
+		max-width: 960px; /* width of website*/
+	}
+	h2 {
+		color: #3f5170;
+		font-size: 22px;
+		border-bottom: 4px double #3f5170;
+		margin-top: 20px;
+		margin-right: 0px;
+		margin-bottom: 20px;
+		margin-left: 0px;
+		padding: 5px;
+	}
+	p {
+		line-height: 25.6px;
+		}
+		.repeat {
+			width: 960px;
+            
+            height: 5px;
+			background-repeat: repeat-x;
+			background-image: url(../images/menu-bg.png)
+			
+		}
+	#menu {
+    width: 960px;
+    height: 40px;
+			margin: 50px auto;
+			background:#f4eaed;
+}
+
+ul.root >li{ 
+    list-style-type: none;
+     float: left;  /* cho cac phan tu cua the li nam tren 1 hang */
+			position: relative;
+		
+}
+ul.root >li > a {
+    text-decoration: none;
+    color: #3f5170;;
+    padding: 0px 15px;
+    line-height: 40px;  
+    display: block; 
+}
+ul.root> li > a:hover {
+    background: orange;
+    color: red;
+    transition: ease-in 0.3s;
+    -moz-transition: ease-in 0.3s;
+    -webkit-transition: ease-in 0.3s ;
+}
+ul.submenu {
+    width: 300px;
+    min-height: 100px;
+    display: none; /* lam cho hop menu bien mat */
+	background: #f4eaed;
+	padding-left: 0px;
+	position: absolute;
+}
+
+ul.submenu >li  {
+   list-style-type: none;
+   padding-left: 3px;
+	
+}
+ul.submenu >li >a {
+    color: #3f5170;
+    text-decoration: none;
+    display: block;
+     border-top: 1px solid #ccc;
+     line-height: 30px;  /* tao cho box cua a to len */
+     text-indent: 3px;
+}
+ul.root > li:hover ul.submenu {
+ display: block;
+}
+ul.submenu >li >a:hover {
+    color: orange;
+    background-color: red;
+    display: block;
+}
+	img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+	/*すべてのページに適用ーーヘッダー　-*/
+	.logo {
+		margin: 50p 0 40px 0;
+		line-height: 0;
+		text-align: center;
+	}
+	
+.footer {
+			background-image: url(../images/footer-bg.png);
+			background-repeat: no-repeat;
+			margin-top: 30px;
+			padding: 80px 15px 20px 15px;
+			
+		}
+		/*個別のスタイル*/
+		.keyvisual {
+			margin: 20px 0 20px 0;
+		}
+		.news-item {
+			margin: 0;
+		}
+		/*about.html*/
+		.shop-photo {
+			float: right;
+			padding: 0 1em 1em 3px;
+		}
+		.clear {
+			clear: left;
+		}
+		.info {
+			border-collapse: collapse;
+		}
+		.info th, .info td {
+			padding: 8px;
+			border: 1px solid #bec2c7;
+			text-align: left; /* can phai doan van*/
+		}
+		.info th {
+			background-color: #dde2ea;
+			width: 90px;
+			color: #b95fae;
+			vertical-align: top;
+			
+		}
+		/*menu.html*/
+		.menu-item {
+			display: flex;
+			border-bottom: 1px dashed #bec2c7;
+			padding: 20px 8px;
+
+		}
+		.menu-photo {
+			margin-right: 16px;
+			flex: 1 1 auto;/*幅を伸縮させたい */
+		}
+		.menu-text {
+			flex: 0 0 336px;/*幅を固定させたい */
+		}
+		.map {
+			text-align: center;
+		}
+		/*contact.html*/
+		form div {
+			padding:12px;
+			border-bottom: 1px dashed #729235;
+		}
+		select {
+			width: 30em;
+		}
+		input[name="subject"] {
+			width: 30em;
+		}
+		textarea {
+			width: 30em;
+			height: 6em;
+		}
+		input[type="submit"] {
+			margin: 20px 0;
+			width: 30em;
+		}
+		/*スマートフォン向けCSS*/
+		@media (max-width: 767px) {
+			/* 全体ーナビゲーション*/
+			.wrapper {
+				margin: 0 8px;
+			}
+			.logo {
+				margin: 30px 0;
+			}
+			.logo img {
+				width: 200px;
+			}
+			.nav {
+				background-color: #dfddda;
+			}
+			.nav li {
+				display: block;
+			}
+			.menu-item {
+				display: block;
+			}
+			.menu-photo {
+				display: block;
+			}
+			.menu-text {
+				display: block;
+			}
+			/* about.html - 画像のパディンぐを調節*/
+			.shop-photo {
+				padding-right: 0;
+			}
+		}
